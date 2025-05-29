@@ -3,9 +3,9 @@ tar -xvf prometheus-3.4.0.linux-amd64.tar.gz
 mkdir /var/lib/prometheus
 mv prometheus-3.4.0.linux-amd64/prometheus /usr/local/bin
 mv prometheus-3.4.0.linux-amd64/promtool /usr/local/bin
-mkdir -P /etc/prometheus/rules
-mkdir -P /etc/prometheus/rules.s
-mkdir -P /etc/prometheus/files_sd
+mkdir -p /etc/prometheus/rules
+mkdir -p /etc/prometheus/rules.s
+mkdir -p /etc/prometheus/files_sd
 mv prometheus-3.4.0.linux-amd64/prometheus.yml /etc/prometheus/prometheus.yml
 groupadd --system prometheus
 useradd -s /sbin/nologin --system -g prometheus prometheus
