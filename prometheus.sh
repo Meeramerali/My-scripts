@@ -38,6 +38,7 @@ WantedBy=multi-user.target
 EOF
 
 chown -R prometheus:prometheus /etc/prometheus/
+chown -R prometheus:prometheus /etc/prometheus/*
 chown -R prometheus:prometheus /var/lib/prometheus/
 chown -R prometheus:prometheus /var/lib/prometheus/*
 chmod -R 775 /etc/prometheus/
